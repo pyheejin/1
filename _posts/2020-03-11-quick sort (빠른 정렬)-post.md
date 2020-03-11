@@ -1,7 +1,7 @@
 ---
 title: "bquick sort (빠른 정렬)"
-layout: category
-permalink: '/python/algorithm'
+date: 2020-03-11
+categories: algorithm
 ---
 
 partition : pivot을 기준으로 왼쪽은 pivot보다 작은 데이터, 오른쪽은 큰 데이터가 모이도록 분할해서 정렬하는 것(재귀함수 이용)
