@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "pyHeejin"
-  avatar           : "/_assets/images/ll.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/ll.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I want to be a developer"
   location         : "Somewhere"
   email            :
