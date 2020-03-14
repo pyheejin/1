@@ -4,78 +4,54 @@ date: 2020-03-14
 categories: algorithm
 ---
 
-# lqueue
+# queue
+First In, First Out (선입선출)
+
+* ADT
+1. Q.empty() -> Boolean : 큐가 비어있으면 True, 아니면 False
+2. Q.enqueue(data) -> None : 큐의 맨 뒤에 데이터를 쌓는다.
+3. Q.dequeue() -> data : 큐 맨 앞의 데이터를 삭제 하면서 반환
+4. Q.peek : 큐 맨 앞 데이터를 반환(삭제는 하지 않음)
+
 
 ```python
-class Node:
-    def __init__(self, data=None):
-        self.__data=data
-        self.__next=None
-
-    @property
-    def data(self):
-        return self.__data
-    
-    @data.setter
-    def data(self, data):
-        self.__data=data
-    
-    @property
-    def next(self):
-        return self.__next
-
-    @next.setter
-    def next(self, n):
-        self.__next=n
-
-class LQueue:
+class Queue:
     def __init__(self):
-        self.front=None
-        self.rear=None
-
+        self.container=list()
+		
+    # queue가 비어있으면 True, 아니면 False
     def empty(self):
-        if self.front==None:
-            return True
+        if not self.container:
+            return Ture
         else:
             return False
-
+	
+    # 큐의 맨 뒤에 데이터를 쌓는다.
     def enqueue(self,data):
-        new_node=Node(data)
-
-        if self.empty():
-            self.front=new_node
-            self.rear=new_node
-
-        self.rear.next=new_node
-        self.rear=new_node
-
+        self.container.append(data)
+		
+    # 큐 맨 앞의 데이터를 삭제 하면서 반환
     def dequeue(self):
-        if self.empty():
-            return
-
-        # 데이터가 하나 있을 땐 rear를 옮겨준다
-        if self.front is self.rear:
-            self.rear=self.rear.next
-
-        cur=self.front
-        self.front=self.front.next
-        return cur.data
-
-
+        return self.container.pop(0)
+		
+    # 큐 맨 앞 데이터를 반환(삭제는 하지 않음)
     def peek(self):
-        if self.empty():
-            return
-
-        return self.front.data
-
-if __name__ == "__main__":
-    q = LQueue()
+        return self.container[0]
+		
+		
+# test code 
+if __name__=="__main__":
+    q=Queue()
     q.enqueue(1)
     q.enqueue(2)
     q.enqueue(3)
     q.enqueue(4)
     q.enqueue(5)
 
+    q.dequeue()
+
+
     while not q.empty():
         print(q.dequeue(), end='  ')
+
 ```
