@@ -5,6 +5,7 @@ categories: algorithm
 ---
 
 # selection sort
+시간복잡도 : O(n^2)
 
 ```python
 import random
@@ -13,12 +14,11 @@ def selection_sort(li):
     n=len(li)
 
     for i in range(n-1):
-        min_index=i
-
+        min_index=i # i부터 끝까지의 값 중 최소값의 위치를 찾음
         for j in range(i+1, n):
             if li[j] < li[min_index]:
                 min_index=j
-        li[i], li[min_index] = li[min_index], li[i]
+        li[i], li[min_index] = li[min_index], li[i] # 최소값을 i의 위치로 교환
 
 
 # test code
