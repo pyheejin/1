@@ -7,6 +7,11 @@ categories: algorithm
 # queue
 First In, First Out (선입선출)
 
+* ADT : 추상 자료형
+1. 자료구조가 가지고 있는 오퍼레이션(함수)의 나열(목록)
+2. 함수 시그니처(인터페이스)만 나열할 뿐, 내부 구현은 표기하지 않는다.(추상화)
+3. 함수의 작동방식 설명
+
 * ADT
 1. Q.empty() -> Boolean : 큐가 비어있으면 True, 아니면 False
 2. Q.enqueue(data) -> None : 큐의 맨 뒤에 데이터를 쌓는다.
