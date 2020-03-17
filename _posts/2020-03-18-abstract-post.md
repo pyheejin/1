@@ -1,5 +1,5 @@
 ---
-title: "abstract class"
+title: "추상 클래스(abstract class)"
 date: 2020-03-18
 categories: python
 ---
