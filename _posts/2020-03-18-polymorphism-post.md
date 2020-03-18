@@ -1,7 +1,7 @@
 ---
 title: "상속(polymorphism)"
 date: 2020-03-18
-categories: class
+categories: python
 ---
 
 # 상속 polymorphism
