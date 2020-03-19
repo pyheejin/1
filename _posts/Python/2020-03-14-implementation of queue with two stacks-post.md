@@ -1,7 +1,7 @@
 ---
 title: "스택 2개로 큐 구현하기"
 date: 2019-04-02
-categories: stack_queue
+categories: python
 ---
 
 # 스택 2개로 큐 구현하기(implementation of queue with two stacks)
