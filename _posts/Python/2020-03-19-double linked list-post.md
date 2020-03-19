@@ -6,7 +6,7 @@ categories: python
 
 # double Linked List
 
-* instance member
+* instance member 
 1. head : 리스트 맨 앞에 있는 더미 
 2. tail : 리스트 맨 뒤에 있는 더미
 3. d_size : 리스트의 요소 개수
