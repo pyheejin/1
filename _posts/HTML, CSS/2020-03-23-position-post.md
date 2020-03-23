@@ -42,7 +42,7 @@ categories: html/css
 </html>
 ```
 
-![relative](./assets/images/relrative.png)
+![relative](../../assets/images/relrative.png)
 
 3. absolute
 부모 태그를 기준으로 위치 조정
@@ -81,7 +81,7 @@ categories: html/css
 </html>
 ```
 
-![absolute](./assets/images/absolute.jpg)
+![absolute](../../assets/images/absolute.jpg)
 
 4. fixed
 스크롤을 내리더라도 브라우저에 위치 고정
