@@ -41,6 +41,7 @@ categories: html/css
     </body>
 </html>
 ```
+![relative](./assets/images/relative.png)
 
 3. absolute
 부모 태그를 기준으로 위치 조정
@@ -58,7 +59,7 @@ categories: html/css
                 border: 1px solid black;
                 position: relative;
                 width: 200px;
-                height: 500px;
+                height: 200px;
             }
 
             .absolute2 {
@@ -78,6 +79,7 @@ categories: html/css
     </body>
 </html>
 ```
+![absolute](./assets/images/absolute.png)
 
 4. fixed
 스크롤을 내리더라도 브라우저에 위치 고정
