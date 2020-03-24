@@ -9,7 +9,7 @@ Math.random() 함수는 0 이상 1 미만의 구간에서 근사적으로 균일
 
 <br>
 
-1. 0 이상 1 미만의 난수
+- 0 이상 1 미만의 난수
 
 ```javascript
 function getRandom() {
@@ -17,7 +17,7 @@ function getRandom() {
 }
 ```
 
-2. 두 값 사이의 난수를 생성(최대값 미포함)
+- 두 값 사이의 난수를 생성(최대값 미포함)
 
 ```javascript
 function getRandomArbitrary(min, max) {
@@ -25,7 +25,7 @@ function getRandomArbitrary(min, max) {
 }
 ```
 
-3. 두 값 사이의 정수 난수 생성
+- 두 값 사이의 정수 난수 생성
 
 ```javascript
 function getRandomInt(min, max) {
@@ -35,7 +35,7 @@ function getRandomInt(min, max) {
 }
 ```
 
-4. 최댓값을 포함하는 정수 난수 생성
+- 최댓값을 포함하는 정수 난수 생성
 
 ```javascript
 function getRandomIntInclusive(min, max) {
