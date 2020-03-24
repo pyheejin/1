@@ -35,7 +35,7 @@ function getRandomInt(min, max) {
 }
 ```
 
-4. 
+4. 최댓값을 포함하는 정수 난수 생성
 
 ```javascript
 function getRandomIntInclusive(min, max) {
