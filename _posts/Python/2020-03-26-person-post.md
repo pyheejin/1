@@ -1,7 +1,7 @@
 ---
-title: "person"
-date: 2019-04-06
-categories: oop
+title: "oop"
+date: 2020-03-26
+categories: python
 ---
 
 ```python
