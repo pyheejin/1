@@ -52,3 +52,9 @@ def function(x='peach', y):
     print(f'{x}+{y}') # SyntaxError: non-default argument follows default argument
 ```
 - default 값이 정의된 parameter가 default 값이 정의 되지 않은 parameter 보다 앞에 위치해 있기 때문에 에러 발생
+
+## 함수를 정의 할 때 default value parameter를 non-default value parameter 앞에 정의 하면 왜 안되는지?
+
+1. 매개변수에 값을 전달할 때는 위치를 기준으로 하기 때문에, 앞에 있는 파라미터에 기본값을 지정했다면 뒤에 있는 변수에도 기본값을 지정해주어야 한다.
+2. 함수를 호출할 때 값을 하나만 전달한다면, 어떤 매개변수를 생략한 것인지 알 수 없기 때문이다.
+3. 파이썬에서는 이런 함수의 정의를 허용하지 않아서 위와 같은 SyntaxError를 발생시킨다.
