@@ -1,8 +1,11 @@
 ---
-title: “자바스크립트의 특징”
+title: “JavaScript의 정의와 역할”
 date: 2020-03-12
 categories: javascript
 ---
+# JavaScript
+JavaScript를 실행시키려면 브라우저가 존재해야하고, HTML파일이 있어야하고, HTML파일에서 JavaScript 파일을 연결시켜줘야 합니다.
+(JavaScript 파일은 확장자가 .js)
 
 ## 자바스크립트의 특징
 
