@@ -15,6 +15,8 @@ HTML은 웹 페이지를 기술하는 언어로써 웹페이지의 내용(conten
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
         <title>Page Title</title>
     </head>
 
