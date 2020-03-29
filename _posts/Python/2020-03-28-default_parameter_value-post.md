@@ -53,6 +53,14 @@ def function(x='peach', y):
 ```
 - default 값이 정의된 parameter가 default 값이 정의 되지 않은 parameter 보다 앞에 위치해 있기 때문에 에러 발생
 
+## 인자의 우선순위
+1. positional arguments(함수에 parameter가 순서대로 전해지는 경우)
+2. default arguments
+3. positional arguments들의 집합
+4. keyword arguments (함수 호출시 값을 지정)
+5. keyword default arguments (keyword arguments에 default 값이 지정된 경우)
+6. keyword arguments의 집합
+
 ## 함수를 정의 할 때 default value parameter를 non-default value parameter 앞에 정의 하면 왜 안되는지?
 
 1. 매개변수에 값을 전달할 때는 위치를 기준으로 하기 때문에, 앞에 있는 파라미터에 기본값을 지정했다면 뒤에 있는 변수에도 기본값을 지정해주어야 한다.
