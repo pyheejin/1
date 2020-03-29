@@ -61,6 +61,8 @@ def function(x='peach', y):
 5. keyword default arguments (keyword arguments에 default 값이 지정된 경우)
 6. keyword arguments의 집합
 
+<hr>
+
 ## 함수를 정의 할 때 default value parameter를 non-default value parameter 앞에 정의 하면 왜 안되는지?
 
 1. 매개변수에 값을 전달할 때는 위치를 기준으로 하기 때문에, 앞에 있는 파라미터에 기본값을 지정했다면 뒤에 있는 변수에도 기본값을 지정해주어야 한다.
