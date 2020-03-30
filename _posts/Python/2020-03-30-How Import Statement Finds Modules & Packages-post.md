@@ -56,7 +56,8 @@ Built-in 모듈, pip 으로 설치한 외무 모듈도 자동으로 site-package
 
 Relative path는 선언해야 하는 경로의 길이를 줄여준다는 장점은 있지만 헷갈리기 쉽고 파일 위치가 변경되면 경로 위치도 변경되어야 하는 단점이 있다. 그러므로 웬만한 경우 absolute path 사용하는걸 권장한다.
 
-### Absolute path
+아래 프로젝트를 예시로 가정하고 설명한다
+
 ```
 └── my_app
     ├── main.py
@@ -70,6 +71,9 @@ Relative path는 선언해야 하는 경로의 길이를 줄여준다는 장점�
         └── subpackage1
             └── module5.py
 ```
+
+### Absolute path
+
 ```python
 # main.py
 from package1 import module1
