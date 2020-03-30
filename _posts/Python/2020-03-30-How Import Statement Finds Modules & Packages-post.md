@@ -11,6 +11,13 @@ categories: python
 
 ## sys.modules와 sys.path의 차이점
 
+```python
+import sys
+
+print(sys.path)
+print(sys.modules)
+```
+
 ### 1. sys.modules
 - 파이썬이 모듈이나 package를 찾기위해 가장 먼저 확인하는 곳
 - sys.modules는 단순한 dictionary 구조로 되어있다.
@@ -20,10 +27,12 @@ categories: python
 - sys는 파이썬에 포함되어 있는 모듈이라서 sys 모듈을 import 해서 sys.modules와 sys.path 출력 및 수정도 가능하다.
 
 ```python
-import sys
-
-print(sys.path)
-print(sys.modules)
+{
+    'copy_reg': <module 'copy_reg' from '/usr/local/Cellar/python@2/2.7.16/Frameworks/Python.framework/Versions/2.7/lib/python2.7/copy_reg.pyc'>, 
+    'sre_compile': <module 'sre_compile' from '/usr/local/Cellar/python@2/2.7.16/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_compile.pyc'>, 
+    '_sre': <module '_sre' (built-in)>, 
+    'encodings': <module 'encodings' from '/usr/local/Cellar/python@2/2.7.16/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/__init__.pyc'>, 
+}
 ```
 
 ### 2. built-in modules
