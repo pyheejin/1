@@ -59,30 +59,29 @@ Relative path는 선언해야 하는 경로의 길이를 줄여준다는 장점�
 아래 프로젝트를 예시로 가정하고 설명한다
 
 ```
-└── my_app
+└── westagram
     ├── main.py
-    ├── package1
-    │   ├── module1.py
-    │   └── module2.py
-    └── package2
+    ├── login
+    │   ├── login.py
+    │   └── logout.py
+    └── profile
         ├── __init__.py
-        ├── module3.py
-        ├── module4.py
-        └── subpackage1
-            └── module5.py
+        ├── my_profile.py
+        ├── follow.py
+        └── story
+            └── story_module.py
 ```
 
 ### Absolute path
 
 ```python
 # main.py
-from package1 import module1
-from package1.module2 import function1
-from package2 import class1
-from package2.subpackage1.module5 import function2
+from login import logout
+from profile.follow import follower
+from profile.story.story_module import my_story
 ```
-- 이미 my_app 프로젝트 안에 있으므로 my_app 은 생략 가능
-- 경로들의 시작점이 전부 "my_app" 프로젝트의 가장 최상위 디렉토리에서 시작하기 떄문에 my_app 프로젝트 내에서는 main.py가 아니더라도 동일한 표기법으로 사용할 수 있다.
+- main.py가 이미 westagram 프로젝트 안에 있으므로 westagram 은 생략 가능
+- 경로들의 시작점이 전부 "westagram" 프로젝트의 가장 최상위 디렉토리에서 시작하기 떄문에 westagram 프로젝트 내에서는 main.py가 아니더라도 동일한 표기법으로 사용할 수 있다.
 - current directory 라고 하는 현재의 프로젝트 디렉토리는 default로 sys.path 에 포함되므로 absolute path는 current directory로 부터 경로를 시작하게 된다.
 
 
@@ -90,15 +89,15 @@ from package2.subpackage1.module5 import function2
 absolute path와 다르게 프로젝트의 최상단 디렉토리를 기준으로 경로를 잡는게 아니라 import 하는 위치를 기준으로 경로를 정의
 
 ```python
-# package2/module3.py
+# profile/my_profile.py
 
-from . import class1
-from .subpackage1.module5 import function2
+from . import class2
+from story.story_module import follower_story
 ```
-- dot(.)은 import가 선언되는 파일의 현재 위치를 표시, 현재위치는 package2/module3.py 이므로 현재 위치에서부터 원하는 모듈의 경로만 선언해주면 된다.
+- dot(.)은 import가 선언되는 파일의 현재 위치를 표시, 현재위치는 profile/my_profile.py 이므로 현재 위치에서부터 원하는 모듈의 경로만 선언해주면 된다.
 
 ```python
-# subpackage1/module5.py
-from ..module4 import class4
+# story/story_module.py
+from ..follow import follow_class
 ```
 - dot 2개를 사용할 수도 있다. dot 2개(..)는 현재위치에서 상위 디렉토리로 가는 경로이다.
