@@ -34,15 +34,19 @@ print(sys.modules)
 - sys.path는 기본적으로 list이며 string 요소들을 가지고 있는 리스트
 - 각 string 요소들은 다음 처럼 경로를 나타냅니다
 ```python
-['',
- '/Users/song-eun-u/anaconda3/bin',
- '/Users/song-eun-u/anaconda3/lib/python36.zip',
- '/Users/song-eun-u/anaconda3/lib/python3.6',
- '/Users/song-eun-u/anaconda3/lib/python3.6/lib-dynload',
- '/Users/song-eun-u/anaconda3/lib/python3.6/site-packages',
- '/Users/song-eun-u/anaconda3/lib/python3.6/site-packages/aeosa',
- '/Users/song-eun-u/anaconda3/lib/python3.6/site-packages/IPython/extensions',
- '/Users/song-eun-u/.ipython']
+[
+    '/Users/heejin/Desktop/study', 
+    '/usr/local/Cellar/python@2/2.7.16/Frameworks/Python.framework/Versions/2.7/lib/python27.zip', 
+    '/usr/local/Cellar/python@2/2.7.16/Frameworks/Python.framework/Versions/2.7/lib/python2.7', 
+    '/usr/local/Cellar/python@2/2.7.16/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-darwin', 
+    '/usr/local/Cellar/python@2/2.7.16/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-mac', 
+    '/usr/local/Cellar/python@2/2.7.16/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-mac/lib-scriptpackages', 
+    '/usr/local/Cellar/python@2/2.7.16/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-tk', 
+    '/usr/local/Cellar/python@2/2.7.16/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-old', 
+    '/usr/local/Cellar/python@2/2.7.16/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-dynload', 
+    '/Users/heejin/Library/Python/2.7/lib/python/site-packages', 
+    '/usr/local/lib/python2.7/site-packages'
+]
 ```
 
 ## sys도 import 해야하는 모듈입니다. 파이썬은 sys 모듈의 위치를 어떻게 찾을 수 있을까요?
