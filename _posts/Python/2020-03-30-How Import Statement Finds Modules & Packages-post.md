@@ -5,18 +5,9 @@ categories: python
 ---
 
 # Modules & Packages
-- 파이썬은 Modules & Packages를 찾을 떄 다음 3가지 장소를 순서대로 보면서 검색한다.
-- 파이썬은 import하고자 하는 모듈과 package를 찾을때에 먼저 sys.modules를 보고, 없으면 파이썬 built-in 모듈들을 확인 하고 마지막으로 sys.path에 지정되어 있는 경로들을 확인해서 찾는다.
-- sys.path 에서도 못찾으면 ModuleNotFoundError 에러를 리턴
+
 
 ## sys.modules와 sys.path의 차이점
-
-```python
-import sys
-
-print(sys.path)
-print(sys.modules)
-```
 
 ### 1. sys.modules
 - 파이썬이 모듈이나 package를 찾기위해 가장 먼저 확인하는 곳
@@ -58,9 +49,22 @@ print(sys.modules)
 ]
 ```
 
-## sys도 import 해야하는 모듈입니다. 파이썬은 sys 모듈의 위치를 어떻게 찾을 수 있을까요?
-파이썬이 설치될때 내장 모듈도 같이 설치되므로 path의 정보가 기본값으로 정해져 있다.
-sys도 이미 built-in 되어있기 때문에 Built-in 모듈에서 찾을 수 있다.
+## sys도 import 해야하는 모듈입니다. <br> 파이썬은 sys 모듈의 위치를 어떻게 찾을 수 있을까요?
+
+```python
+import sys
+
+print(sys.path)
+print(sys.modules)
+
+# 'sys': <module 'sys' (built-in)> 키:밸류 형식으로 되어있음
+```
+- sys는 파이썬에 포함되어 있는 모듈이라서 import해서 sys.modules와 sys.path를 출력하거나 수정도 가능하다.
+- 파이썬이 설치될때 내장 모듈도 같이 설치되므로 path의 정보가 기본값으로 정해져 있다
+- sys도 이미 built-in 되어있기 때문에 Built-in 모듈에서 찾을 수 있다.
+<h5> 파이썬은 Modules & Packages를 찾을 떄 다음 3가지 장소를 순서대로 보면서 검색한다.</h5>
+<h5> 파이썬은 import하고자 하는 모듈과 package를 찾을때에 먼저 sys.modules를 보고, 없으면 파이썬 built-in 모듈들을 확인 하고 마지막으로 sys.path에 지정되어 있는 경로들을 확인해서 찾는다.</h5>
+<h5> sys.path 에서도 못찾으면 ModuleNotFoundError 에러를 리턴</h5>
 
 ## Absolute path와 Relative path의 차이점
 Built-in 모듈, pip 으로 설치한 외무 모듈도 자동으로 site-packages 라는 디렉토리에 설치가 되는데 이 site-packages는 sys.path에 이미 포함되어 있기때문에 찾는데 문제가 없다.
